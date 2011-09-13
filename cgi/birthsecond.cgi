@@ -6,6 +6,27 @@ use Template;
 use CGI;
 use DateTime;
 
+=head1 NAME
+
+Birthsecond calculator
+
+=head1 DESCRIPTION
+
+Calculates when your lifespan reaches one billion seconds since birth.
+
+Kudos to Ingy for the original concept.
+
+=head1 AUTHOR
+
+Toby Corkindale <tjc@cpan.org>
+
+Copyright © 2011 Toby Corkindale, all rights reserved.
+
+This source code may be used and modified by others, as long as you retain the
+author and copyright details or at least include an attribution to me.
+
+=cut
+
 eval {
     my $cgi = CGI->new;
 
