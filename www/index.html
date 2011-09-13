@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculate your billionth birth-second</title>
+    <link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Nobile" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+    <link type="text/css" href="http://eventbot.dryft.net/static/ui/ui.all.css" rel="stylesheet" />
+    <script type="text/javascript" src="http://eventbot.dryft.net/static/ui/ui.core.js"></script>
+    <script type="text/javascript" src="http://eventbot.dryft.net/static/ui/ui.datepicker.js"></script>
+
+<style>
+h1 {
+  font-family: Orbitron, Arial, sans-serif;
+}
+p {
+  font-family: Nobile, Verdana, serif;
+}
+</style>
+
+</head>
+<body>
+<h1>Calculate your billionth birth-second</h1>
+<p>Please provide your time and date of birth:</p>
+<form action="/cgi-bin/birthsecond.cgi" method="get">
+
+<p>
+Date: <input type="text" size="16" name="date" /><br/>
+<em>Use DD/MM/YYYY or YYYY-MM-DD date formats.</em><br/>
+<br/>
+
+Time: <input type="text" size="8" name="time" /><br/>
+<em>Use 24-hour HH:MM format.</em></br>
+<br/>
+
+<input type="submit" />
+
+</p>
+
+</form>
+
+</body>
+
+<script type='text/javascript'>
+  $(function(){
+    $('input[name=date]').datepicker(
+      { dateFormat: 'dd/mm/yy' }
+    );
+  });
+</script>
+
+</html>

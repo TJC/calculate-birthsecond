@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculate your billionth birth-second</title>
+    <link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Nobile" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+<style>
+h1 {
+  font-family: Orbitron, Arial, sans-serif;
+}
+p {
+  font-family: Nobile, Verdana, serif;
+}
+</style>
+
+</head>
+<body>
+<h1>Your billionth birth-second</h1>
+<p>If you were born on [% datedisplay(birthday) %], then your
+billionth birth-second occurs at:<br/>
+[% datedisplay(birthsecond) %]
+</p>
+<p>
+Note that this calculation assumes your birth and current time-zones are the
+same. However if you have moved, then you'll need to add or subtract the
+difference in hours as appropriate.
+</p>
+
+</body>
+
+</html>
