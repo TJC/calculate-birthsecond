@@ -1,5 +1,13 @@
-This is a Perl CGI script to calculate the time and date of a user's
-billionth birthsecond.
+Billionth Birth-second
+======================
+
+Description
+-----------
+
+This is a Perl CGI script to calculate the time and date of a user's billionth birthsecond.
+
+Installation
+------------
 
 To install, assuming a fairly standard Debian/Ubuntu Apache setup:
 
